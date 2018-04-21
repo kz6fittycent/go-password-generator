@@ -1,5 +1,5 @@
 name: go-password-generator # check to see if it's available
-version: '1.0+git' # check versioning
+version: '1.0.1+git' # check versioning
 summary: Go based random password generator- experimental. # 79 char long summary
 description: |
     Go based random password generator- experimental.
@@ -19,9 +19,3 @@ parts:
     plugin: go
     go-importpath: github.com/kz6fittycent/go-password-generator
     after: [go]
-      
-  files:
-    plugin: dump
-    organize:
-      ./nounlist: /nounlist
-      #./adjectivelist: /adjectivelist
