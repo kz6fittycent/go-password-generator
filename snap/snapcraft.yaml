@@ -21,7 +21,7 @@ parts:
     after: [go]
     
   files:
-    plugin: copy
+    plugin: dump
     organize:
       nounlist: nounlist
       adjectivelist: adjectivelist
