@@ -20,8 +20,9 @@ parts:
     go-importpath: github.com/kz6fittycent/go-password-generator
     after: [go]
     
-  files:
-    plugin: copy
-    organize:
-      ./*: /
+    files:
+      plugin: copy
+      organize:
+        nounlist: nounlist
+        adjectivelist: adjectivelist
   
