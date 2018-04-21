@@ -22,7 +22,7 @@ parts:
     
   files:
     plugin: copy
-      organize:
-        nounlist: nounlist
-        adjectivelist: adjectivelist
+    organize:
+      nounlist: nounlist
+      adjectivelist: adjectivelist
   
