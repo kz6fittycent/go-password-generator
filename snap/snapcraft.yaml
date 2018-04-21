@@ -24,4 +24,4 @@ parts:
     plugin: dump
     organize:
       ./nounlist: /nounlist
-      ./adjectivelist: /adjectivelist
+      #./adjectivelist: /adjectivelist
