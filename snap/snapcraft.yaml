@@ -8,13 +8,14 @@ confinement: strict # use 'strict' once you have the right plugs
 
 apps:
   go-password-generator:
-    command: go-password-generator.go
+    command: go-password-generator
     #environment: 
       #LC_ALL: C.UTF-8
     plugs:
       - home
 parts: 
   my-part:
-    source: https://github.com/kz6fittycent/go-password-generator
-    source-type: git
+    source: .
     plugin: go
+    go-importpath: github.com/kz6fittycent/go-password-generator
+    after: [go]
