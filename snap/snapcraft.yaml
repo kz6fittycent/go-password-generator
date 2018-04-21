@@ -1,5 +1,5 @@
 name: passbot # check to see if it's available
-version: '1.0.3+git' # check versioning
+version: '1.0.4+git' # check versioning
 summary: Go based random password generator- experimental. # 79 char long summary
 description: |
     Go based random password generator- experimental.
@@ -19,10 +19,8 @@ parts:
     plugin: go
     go-importpath: github.com/kz6fittycent/go-password-generator
     after: [go]
-    
-  files:
-    plugin: dump
-    organize:
-      nounlist: $SNAP nounlist
-      adjectivelist: $SNAP adjectivelist
+  # need nounlist and adjectivelist to end up IN the snap. Credit to DiddleDan for this one.   
+  install: |
+    install -T nounlist $SNAPCRAFT_PART_INSTALL/nounlist
+    install -T adjective list $SNAPCRAFT_PART_INSTALL/adjectivelist
   
