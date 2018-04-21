@@ -23,6 +23,6 @@ parts:
   files:
     plugin: dump
     organize:
-      nounlist: nounlist
-      adjectivelist: adjectivelist
+      nounlist: $SNAP nounlist
+      adjectivelist: $SNAP adjectivelist
   
