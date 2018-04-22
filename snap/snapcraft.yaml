@@ -19,12 +19,6 @@ parts:
     plugin: go
     go-importpath: github.com/kz6fittycent/go-password-generator
     after: [go]
-  files:
-    plugin: dump
-    organize:
-      nounlist: $SNAPCRAFT_PART_INSTALL/nounlist
-      adjectivelist: $SNAPCRAFT_PART_INSTALL/adjectivelist  
-      
   install: |
     install -T nounlist $SNAPCRAFT_PART_INSTALL/nounlist
     install -T adjectivelist $SNAPCRAFT_PART_INSTALL/adjectivelist
