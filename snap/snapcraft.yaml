@@ -19,9 +19,8 @@ parts:
     plugin: go
     go-importpath: github.com/kz6fittycent/go-password-generator
     after: [go]
-  # need nounlist and adjectivelist to end up IN the snap. Credit to DiddleDan for this one.   
-    override-build: |
-      snapcraftctl build
-      install -T nounlist $SNAPCRAFT_PART_INSTALL/nounlist
-      install -T adjective list $SNAPCRAFT_PART_INSTALL/adjectivelist
-  
+  files:
+    plugin: dump
+    organize:
+      nounlist: $SNAPCRAFT_PART_INSTALL/nounlist
+      adjectivelist: $SNAPCRAFT_PART_INSTALL/adjectivelist  
