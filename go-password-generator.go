@@ -79,9 +79,9 @@ func check(e error) {
 
 func main() {
 	// Input Files
-	noun, err := os.Open("$SNAP nounlist")
+	noun, err := os.Open("nounlist")
 	check(err)
-	adjective, err := os.Open("$SNAP adjectivelist")
+	adjective, err := os.Open("adjectivelist")
 	check(err)
 	nounArray := fileToArray(noun)
 	adjectiveArray := fileToArray(adjective)
