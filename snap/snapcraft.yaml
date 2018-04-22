@@ -20,5 +20,5 @@ parts:
     go-importpath: github.com/kz6fittycent/go-password-generator
     after: [go]
     install: |
-      install -T nounlist $SNAP/nounlist
-      install -T adjectivelist $SNAP/adjectivelist
+      install -T nounlist $SNAP~/nounlist
+      install -T adjectivelist $SNAP~/adjectivelist
