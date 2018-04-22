@@ -19,8 +19,5 @@ parts:
     plugin: go
     go-importpath: github.com/kz6fittycent/go-password-generator
     after: [go]
-    files:
-      plugin: dump
-      organize: |
-        /snap/nounlist:nounlist
-        /snap/adjectivelist:adjectivelist
+    override-build: |
+      cd ..
