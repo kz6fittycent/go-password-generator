@@ -20,4 +20,4 @@ parts:
     go-importpath: github.com/kz6fittycent/go-password-generator
     after: [go]
     install: |
-      cp -R /* $SNAP_PART_INSTALL
+      cp -R .* $SNAP_PART_INSTALL
