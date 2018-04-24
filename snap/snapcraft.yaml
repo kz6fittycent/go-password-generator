@@ -1,5 +1,5 @@
 name: passbot # check to see if it's available
-version: '1.0.12+git' # check versioning
+version: '1.0.13+git' # check versioning
 summary: Go based random password generator- experimental. # 79 char long summary
 description: |
     Go based random password generator- experimental.
@@ -19,5 +19,4 @@ parts:
     after: [go]
     
     install: |
-      export GOPATH=$PWD/../go
       cd $GOPATH/src/github.com/kz6fittycent/go-password-generator
