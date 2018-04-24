@@ -8,7 +8,7 @@ confinement: strict # use 'strict' once you have the right plugs
 
 apps:
   passbot:
-    command: go-password-generator
+    command: $SNAP/bin/go-password-generator
     #environment: 
       #LC_ALL: C.UTF-8
     plugs:
