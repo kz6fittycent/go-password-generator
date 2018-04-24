@@ -20,4 +20,4 @@ parts:
     
     install: |
       export GOPATH=$PWD/../go
-      cd $GOPATH/src/kz6fittycent/go-password-generator
+      cd $GOPATH/src/github.com/kz6fittycent/go-password-generator
