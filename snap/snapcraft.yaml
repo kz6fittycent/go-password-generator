@@ -1,5 +1,5 @@
 name: passbot # check to see if it's available
-version: '1.0.9+git' # check versioning
+version: '1.0.10+git' # check versioning
 summary: Go based random password generator- experimental. # 79 char long summary
 description: |
     Go based random password generator- experimental.
@@ -23,5 +23,5 @@ parts:
   word-lists:
     plugin: copy
     files: 
-      nounlist: nounlist
-      adjectivelist: adjectivelist
+      nounlist: bin/nounlist
+      adjectivelist: bin/adjectivelist
