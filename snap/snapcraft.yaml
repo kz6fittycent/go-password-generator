@@ -8,7 +8,7 @@ confinement: strict # use 'strict' once you have the right plugs
 
 apps:
   passbot:
-    command: $SNAP/go-password-generator
+    command: go-password-generator
     #environment: 
       #LC_ALL: C.UTF-8
     plugs:
@@ -19,9 +19,3 @@ parts:
     plugin: go
     go-importpath: github.com/kz6fittycent/go-password-generator
     after: [go]
-    
-  word-lists:
-    plugin: copy
-    files: 
-      nounlist: $SNAP/nounlist
-      adjectivelist: $SNAP/adjectivelist
