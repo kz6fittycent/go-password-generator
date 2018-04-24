@@ -18,5 +18,7 @@ parts:
     go-importpath: github.com/kz6fittycent/go-password-generator
     after: [go]
     
-    install: |
-      cd $GOPATH/src/github.com/kz6fittycent/go-password-generator
+    override-build: |
+      snapcraftctl build
+      install -T nounlist $SNAPCRAFT_PART_INSTALL/nounlist
+      install -T adjectivelist $SNAPCRAFT_PART_INSTALL/adjectivelist
