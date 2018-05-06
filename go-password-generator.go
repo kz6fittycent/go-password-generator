@@ -79,9 +79,9 @@ func check(e error) {
 
 func main() {
 	// Input Files
-	noun, err := os.Open("nounlist")
+	noun, err := os.Open("lib/nounlist")
 	check(err)
-	adjective, err := os.Open("adjectivelist")
+	adjective, err := os.Open("lib/adjectivelist")
 	check(err)
 	nounArray := fileToArray(noun)
 	adjectiveArray := fileToArray(adjective)
