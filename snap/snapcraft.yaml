@@ -18,7 +18,8 @@ parts:
     go-importpath: github.com/kz6fittycent/go-password-generator
     after: [go]
     
-    build: |
-    
-      export GOPATH=$SNAPCRAFT_PART_INSTALL/../go
-      cd $GOPATH/src/github.com/kz6fittycent/go-password-generator
+    install: |
+      src=$SNAPCRAFT_PART_INSTALL/../go/src/github.com/kz6fittycent/go-password-generator \
+      cp -r $src/nounlist \
+      cp -r $src/adjectivelist \
+      cp $SNAPCRAFT_PART_INSTALL/
