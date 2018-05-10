@@ -17,3 +17,6 @@ parts:
     plugin: go
     go-importpath: github.com/kz6fittycent/go-password-generator
     after: [go]
+    
+    prepare: |
+      chmod a+x passbot.sh
