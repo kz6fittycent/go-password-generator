@@ -14,13 +14,11 @@ parts:
     after: [go]
     
     prepare: |
-      chmod +x bin/passbot.sh
+      chmod +x passbot.sh
       
-    organize:
-      passbot: bin/passbot
-      
+     
 apps:
   passbot:
-    command: bin/passbot
+    command: passbot
     plugs:
       - home
