@@ -8,7 +8,7 @@ confinement: strict # use 'strict' once you have the right plugs
 
 apps:
   passbot:
-    command: $SNAP/go-password-generator
+    command: /snap/go-password-generator
     plugs:
       - home
 parts: 
