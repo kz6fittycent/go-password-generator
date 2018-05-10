@@ -1,16 +1,11 @@
 name: passbot # check to see if it's available
-version: '1.0.17+git' # check versioning
+version: '1.0.18+git' # check versioning
 summary: Go based random password generator- experimental. # 79 char long summary
 description: |
     Go based random password generator- experimental.
 grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs
 
-apps:
-  passbot:
-    command: passbot.sh
-    plugs:
-      - home
 parts: 
   my-part:
     source: .
@@ -19,4 +14,13 @@ parts:
     after: [go]
     
     prepare: |
-      chmod a+x passbot.sh
+      chmod +x /prep/passbot.sh
+      prep/passbot.sh
+    organize:
+      passbot: bin/passbot
+      
+apps:
+  passbot:
+    command: bin/passbot
+    plugs:
+      - home
