@@ -25,7 +25,7 @@ parts:
       ./go-password-generator.go: go-password-generator.go
       ./lib/nounlist: lib/nounlist
       ./lib/adjectivelist: lib/adjectivelist
-    
+      ./passbot.sh: bin/passbot.sh
 
 
 
