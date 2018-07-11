@@ -6,26 +6,26 @@ description: |
 grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs
 
-parts: 
-  my-part:
-    source: .
-    plugin: go
-    go-importpath: github.com/kz6fittycent/go-password-generator
-    after: [go]
-    
-    prepare: |
-      chmod +x passbot.sh
-      
-     
 apps:
   passbot:
     command: passbot
     plugs:
       - home
 
+parts: 
+  my-part:
+    source: .
+    plugin: go
+    go-importpath: github.com/kz6fittycent/go-password-generator
+    after: [go]
+        
   publish:
     plugin: copy
     files:
       ./go-password-generator.go: go-password-generator.go
       ./lib/nounlist: lib/nounlist
       ./lib/adjectivelist: lib/adjectivelist
+    
+
+
+
