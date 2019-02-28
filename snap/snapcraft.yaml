@@ -8,9 +8,7 @@ confinement: strict # use 'strict' once you have the right plugs
 
 apps:
   passbot:
-    command: passbot.sh
-    plugs:
-      - home
+    command: $SNAP/bin/passbot.sh
 
 parts: 
   passbot:
