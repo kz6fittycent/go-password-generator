@@ -1,10 +1,10 @@
-name: passbot # check to see if it's available
-version: git # check versioning
+name: passbot 
+version: git 
 summary: Go based random password generator- experimental. # 79 char long summary
 description: |
     Go based random password generator- experimental.
-grade: stable # must be 'stable' to release into candidate/stable channels
-confinement: strict # use 'strict' once you have the right plugs
+grade: stable
+confinement: strict
 
 apps:
   passbot:
