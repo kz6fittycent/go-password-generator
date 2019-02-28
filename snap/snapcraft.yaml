@@ -13,9 +13,11 @@ apps:
       - home
 
 parts: 
-  my-part:
+  passbot:
     plugin: dump
     source: .
+    
+  apps:
     plugin: go    
     go-importpath: github.com/kz6fittycent/go-password-generator
     after: [go]
