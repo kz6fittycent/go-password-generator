@@ -8,7 +8,7 @@ confinement: strict
 
 apps:
   passbot:
-    command: $SNAP/bin/passbot.sh
+    command: bin/passbot.sh
 
 parts: 
   passbot:
